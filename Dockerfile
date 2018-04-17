@@ -4,6 +4,7 @@ RUN apt-get update --fix-missing \
 &&  apt-get upgrade -y --force-yes \
 &&  apt-get install -y --force-yes \
     libssl-dev \
+    libomp-dev \
     curl \
     git \
     redis-tools \
