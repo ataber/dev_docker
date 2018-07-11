@@ -23,7 +23,7 @@ ENV BUNDLE_GEMFILE=/app/Gemfile \
     BUNDLE_PATH=/bundle
 
 # node.js LTS install
-RUN curl --silent --location https://deb.nodesource.com/setup_6.x | bash - \
+RUN curl --silent --location https://deb.nodesource.com/setup_8.x | bash - \
     && apt-get install -y nodejs \
     && npm -g up
 
