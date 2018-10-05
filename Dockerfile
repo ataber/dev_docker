@@ -1,8 +1,8 @@
 FROM ataber/ruby_bionic
 
-RUN DEBIAN_FRONTEND=noninteractive apt-get update --fix-missing \
+RUN apt-get update --fix-missing \
 &&  apt-get upgrade -y --force-yes \
-&&  apt-get install -y --force-yes \
+&&  DEBIAN_FRONTEND=noninteractive apt-get install -y --force-yes \
     libssl-dev \
     libomp-dev \
     curl \
