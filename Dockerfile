@@ -11,6 +11,7 @@ RUN apt-get update --fix-missing \
     libreadline-dev \
     libpq-dev \
     tzdata \
+    libxml2-dev \
     libopenmpi-dev \
 &&  apt-get clean \
 &&  rm -rf /var/cache/apt/archives/* /var/lib/apt/lists/*
