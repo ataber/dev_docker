@@ -1,6 +1,6 @@
 FROM ataber/ruby_bionic
 
-RUN apt-get update --fix-missing \
+RUN DEBIAN_FRONTEND=noninteractive apt-get update --fix-missing \
 &&  apt-get upgrade -y --force-yes \
 &&  apt-get install -y --force-yes \
     libssl-dev \
